@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.circle {
+  width: 64px;
+  height: 64px;
+
+  background: #ffffff;
+  border: 1px solid #1275b9;
+  border-radius: 32px;
+}
+
+.tablet {
+  background: #ffffff url(icons/tablet.png) no-repeat center;
+}
+
+.cog {
+  background: #ffffff url(icons/cog.png) no-repeat center;
+}
+
+.dashboard {
+  background: #ffffff url(icons/dashboard.png) no-repeat center;
+}
+
+.card:hover .tablet {
+  background: #1275b9 url(icons/tablet1.png) no-repeat center;
+}
+
+.card:hover .cog {
+  background: #1275b9 url(icons/cog1.png) no-repeat center;
+}
+
+.card:hover .dashboard {
+  background: #1275b9 url(icons/dashboard1.png) no-repeat center;
+}
+
+.name {
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.description {
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  color: #9d9d9d;
+  text-align: center;
+  width: 244px;
+  height: 54px;
+}
+
+ul {
+  width: 100vw;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:not(:last-child) {
+   margin-right: 76px;
+}
